@@ -1,0 +1,20 @@
+{
+  "name": "ntask-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && npm run server",
+    "server":"http-server public -p 3001",
+    "build": "browserify src -o public/js/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "moises.paula",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.22.0",
+    "browserify": "^17.0.0",
+    "http-server": "^13.0.2",
+    "tiny-emitter": "^2.1.0"
+  }
+}
